@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(300deg, rgb(45, 233, 226), rgb(81, 139, 186), rgb(147, 186, 182), rgb(0, 255, 132));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-top: 10vh;
+}
+
+.titlu {
+    font-size: 25px;
+    color: rgb(224, 173, 54);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.formular {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: rgb(238, 243, 242);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.list input {
+    width: calc(100% - 150px);
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 1rem;
+    background-color: rgb(199, 220, 220);
+    font-size: 16px;
+}
+
+.list button {
+    padding: 0 1.5rem;
+    height: 54px;
+    border-radius: 50px;
+    background-color: rgb(223, 159, 70);
+    border: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+@keyframes bun {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-8px); }
+    60% { transform: translateY(4px); }
+    100% { transform: translateY(0); }
+}
+
+.list button:active {
+    animation: bun 0.9s ease;
+}
+
+.formular ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.formular ul li {
+    padding: 0.5rem 2.5rem;
+    border-bottom: 2px solid #d1b52a;
+    text-align: left;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formular ul li span {
+    background-color: rgb(214, 133, 27);
+    border: none;
+    border-radius: 50px;
+    padding: 0.8vh 1vh;
+    border: 1.5px solid black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.formular ul li span:active {
+    transform: scale(1.2);
+    background-color: rgb(199, 214, 212);
+}
+
+@media (max-width: 480px) {
+    .list{
+        width: auto;
+    }
+
+    .list button {
+        padding: 0 1rem;
+        height: 44px;
+        border-radius: 50px;
+        background-color: rgb(223, 159, 70);
+        border: none;
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 1rem;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .list input {
+    width: calc(100% - 100px);
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 1rem;
+    background-color: rgb(199, 220, 220);
+    font-size: 16px;
+    }
+    
+}
+
